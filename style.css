@@ -375,6 +375,158 @@ footer {
   letter-spacing: 0.02em;
 }
 
+/* ── THEME TRANSITIONS ── */
+body { transition: background-color 0.38s ease, color 0.38s ease; }
+header, footer { transition: background 0.38s ease; }
+.season-card, .species-card, .poison-card, .poison-intro {
+  transition: background-color 0.38s ease, border-color 0.38s ease,
+              color 0.38s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* ── TOGGLE BUTTON ── */
+#theme-toggle {
+  position: fixed;
+  top: 1.1rem;
+  right: 1.5rem;
+  z-index: 300;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+}
+#theme-toggle:hover { transform: scale(1.1); background: rgba(255,255,255,0.26); }
+#theme-toggle .icon-sun  { display: none; }
+#theme-toggle .icon-moon { display: block; }
+[data-theme="dark"] #theme-toggle .icon-sun  { display: block; }
+[data-theme="dark"] #theme-toggle .icon-moon { display: none; }
+[data-theme="dark"] #theme-toggle {
+  border-color: rgba(80, 220, 120, 0.38);
+  background: rgba(20, 60, 38, 0.55);
+  color: #80e8a0;
+}
+
+/* ── DARK THEME VARIABLES ── */
+[data-theme="dark"] {
+  --bg:           #0b1d12;
+  --surface:      #111e16;
+  --border:       #28402e;
+  --text:         #dce8e0;
+  --muted:        #7ab882;
+  --forest:       #4ec870;
+  --forest-dark:  #38aa58;
+  --forest-light: #182a1e;
+  --gold:         #ffaa28;
+  --gold-light:   #181400;
+  --amber:        #e88828;
+  --red:          #ff5848;
+  --red-light:    #1e0c0c;
+  --berry:        #cc4840;
+}
+
+[data-theme="dark"] body   { background: var(--bg); color: var(--text); }
+[data-theme="dark"] header { background: linear-gradient(135deg, #0c2a18 0%, #091c12 55%, #060e0a 100%); }
+[data-theme="dark"] footer { background: linear-gradient(135deg, #091c12 0%, #060e0a 100%); }
+[data-theme="dark"] .affiliation { color: #4a9e66; }
+[data-theme="dark"] .oath         { color: #c0e8cc; }
+
+/* Season cards — dark */
+[data-theme="dark"] .season-card   { background: var(--surface); }
+[data-theme="dark"] .spring        { border-color: #2e6e40; }
+[data-theme="dark"] .spring::before       { background: #2e6e40; }
+[data-theme="dark"] .spring .season-label { color: #4ec870; }
+[data-theme="dark"] .early-summer          { border-color: #806a10; }
+[data-theme="dark"] .early-summer::before  { background: #806a10; }
+[data-theme="dark"] .early-summer .season-label { color: #c8a828; }
+[data-theme="dark"] .peak          { border-color: #804818; }
+[data-theme="dark"] .peak::before  { background: #804818; }
+[data-theme="dark"] .peak .season-label { color: #d07030; }
+[data-theme="dark"] .autumn-s       { border-color: #7a2818; }
+[data-theme="dark"] .autumn-s::before  { background: #7a2818; }
+[data-theme="dark"] .autumn-s .season-label { color: #c84028; }
+[data-theme="dark"] .late-autumn          { border-color: #503880; }
+[data-theme="dark"] .late-autumn::before  { background: #503880; }
+[data-theme="dark"] .late-autumn .season-label { color: #8060c0; }
+
+/* Poison cards — dark */
+[data-theme="dark"] .poison-card   { background: #1a0e0e; border-color: #5a2020; }
+[data-theme="dark"] .poison-intro  { background: #1a0a0a; border-color: #5a2020; color: #d08080; }
+[data-theme="dark"] .danger        { color: #c88080; }
+
+/* ── NEW SECTION STYLES ── */
+.section-with-art {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.section-illustration {
+  border-radius: 16px;
+  overflow: hidden;
+  width: 220px;
+  flex-shrink: 0;
+}
+.section-illustration svg { display: block; width: 100%; height: auto; }
+
+.section-body { flex: 1; min-width: 260px; }
+.section-body p + p { margin-top: 1rem; }
+
+/* Night section */
+.night-section .eyebrow { color: #5a8aaa; }
+
+/* Foxfire section */
+.foxfire-section .eyebrow       { color: var(--forest); }
+.foxfire-section .section-title { color: var(--forest-dark); }
+
+.foxfire-note {
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  background: var(--forest-light);
+  border-left: 4px solid var(--forest);
+  padding: 0.85rem 1.25rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-top: 1.5rem;
+  color: var(--muted);
+  max-width: 780px;
+  transition: background 0.38s, border-color 0.38s, color 0.38s;
+}
+
+.foxfire-term {
+  font-style: italic;
+  font-weight: bold;
+  transition: color 0.38s, text-shadow 0.38s;
+}
+
+/* ── FOXFIRE GLOW — dark mode only ── */
+[data-theme="dark"] #foxfire .section-title {
+  color: #5ae878;
+  text-shadow: 0 0 18px rgba(60, 230, 90, 0.45), 0 0 42px rgba(60, 230, 90, 0.18);
+}
+[data-theme="dark"] #foxfire .eyebrow {
+  color: #40c860;
+  text-shadow: 0 0 10px rgba(60, 220, 90, 0.4);
+}
+[data-theme="dark"] .foxfire-term {
+  color: #7af094;
+  text-shadow: 0 0 8px rgba(80, 240, 110, 0.55), 0 0 20px rgba(80, 240, 110, 0.25);
+}
+[data-theme="dark"] .foxfire-note {
+  background: #0e2016;
+  border-left-color: #3cc860;
+  color: #7ab882;
+}
+[data-theme="dark"] #foxfire .section-illustration {
+  filter: drop-shadow(0 0 14px rgba(55, 220, 90, 0.38));
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 760px) {
   .header-content { flex-direction: column; gap: 1.5rem; }
@@ -382,7 +534,33 @@ footer {
   .timeline { grid-template-columns: 1fr 1fr; }
 }
 
+@media (max-width: 560px) {
+  .section-illustration { width: 100%; }
+}
+
 @media (max-width: 460px) {
   .timeline { grid-template-columns: 1fr; }
   .species-grid { grid-template-columns: 1fr; }
 }
+
+/* ── SECTION VISIBILITY BY MODE ── */
+/* Day mode (default): night sections and their nav links are hidden */
+#night, #foxfire { display: none; }
+nav a[href="#night"], nav a[href="#foxfire"] { display: none; }
+
+/* Night mode: day sections hidden, night sections shown */
+[data-theme="dark"] #intro,
+[data-theme="dark"] #seasonality,
+[data-theme="dark"] #edible,
+[data-theme="dark"] #poisonous { display: none; }
+
+[data-theme="dark"] #night,
+[data-theme="dark"] #foxfire { display: block; }
+
+[data-theme="dark"] nav a[href="#intro"],
+[data-theme="dark"] nav a[href="#seasonality"],
+[data-theme="dark"] nav a[href="#edible"],
+[data-theme="dark"] nav a[href="#poisonous"] { display: none; }
+
+[data-theme="dark"] nav a[href="#night"],
+[data-theme="dark"] nav a[href="#foxfire"] { display: inline; }
