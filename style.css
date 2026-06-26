@@ -1,0 +1,256 @@
+/* ── Reset & base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:         #f8f7f4;
+  --surface:    #ffffff;
+  --border:     #e4e2dc;
+  --text:       #1c1b18;
+  --muted:      #6b6860;
+  --accent:     #3a5a8c;
+  --accent-light: #edf1f7;
+  --tag-bg:     #efefec;
+  --tag-text:   #4a4840;
+  --radius:     8px;
+  --gap:        2rem;
+  --max-w:      860px;
+  --transition: 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Georgia", serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ── Layout ── */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Header ── */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 3rem 0 2rem;
+}
+
+header h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.role {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  transition: opacity var(--transition);
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+/* ── Sections ── */
+main section {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+main section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 1.75rem;
+}
+
+p + p {
+  margin-top: 1rem;
+}
+
+strong {
+  font-weight: bold;
+  color: var(--text);
+}
+
+/* ── Skills ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--gap);
+}
+
+.skill-group h3 {
+  font-size: 0.95rem;
+  font-family: system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.skill-group ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skill-group li {
+  font-size: 0.95rem;
+  color: var(--muted);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.skill-group li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--border);
+}
+
+/* ── Projects ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border-color: #ccc;
+}
+
+.card-tag {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  font-family: system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.85rem;
+}
+
+.card h3 {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── Contact ── */
+.contact-list {
+  list-style: none;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.contact-label {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 70px;
+}
+
+.contact-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.97rem;
+  transition: opacity var(--transition);
+}
+
+.contact-list a:hover {
+  opacity: 0.75;
+}
+
+/* ── Footer ── */
+footer {
+  padding: 2rem 0;
+}
+
+footer p {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
