@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.12 }
+  { threshold: 0.08 }
 );
 
 sections.forEach((section) => observer.observe(section));
@@ -21,14 +21,14 @@ const navLinks = document.querySelectorAll('nav a');
 const sectionMap = Array.from(navLinks).map((link) => ({
   link,
   target: document.querySelector(link.getAttribute('href')),
-}));
+})).filter((entry) => entry.target);
 
 function updateActiveLink() {
-  const scrollY = window.scrollY + 120;
+  const scrollY = window.scrollY + 140;
   let current = sectionMap[0];
 
   for (const entry of sectionMap) {
-    if (entry.target && entry.target.offsetTop <= scrollY) {
+    if (entry.target.offsetTop <= scrollY) {
       current = entry;
     }
   }

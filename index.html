@@ -1,140 +1,577 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inga Gutarevaitė</title>
+  <title>Dr. Inga Gutarevaitė — Lithuanian Forest Fungi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <div class="container">
-      <h1>Inga Gutarevaitė</h1>
-      <p class="role">Destination specialist &amp; AI automation builder</p>
+      <div class="header-content">
+
+        <div class="header-decoration" aria-hidden="true">
+          <!-- Header mushroom cluster: fly agaric, chanterelle, bolete -->
+          <svg viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ground -->
+            <ellipse cx="100" cy="150" rx="90" ry="10" fill="#1e6035" opacity="0.4"/>
+            <!-- Grass blades -->
+            <path d="M20,148 C22,130 18,118 24,105" fill="none" stroke="#5ab870" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M30,148 C28,132 32,120 26,108" fill="none" stroke="#4aa060" stroke-width="2" stroke-linecap="round"/>
+            <path d="M160,148 C162,130 158,118 164,105" fill="none" stroke="#5ab870" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M172,148 C170,132 174,120 168,108" fill="none" stroke="#4aa060" stroke-width="2" stroke-linecap="round"/>
+            <path d="M88,148 C90,136 86,125 92,115" fill="none" stroke="#5ab870" stroke-width="1.5" stroke-linecap="round"/>
+
+            <!-- FLY AGARIC (left, tall) -->
+            <!-- stem -->
+            <rect x="28" y="95" width="22" height="50" rx="6" fill="#f5f5f0"/>
+            <!-- ring -->
+            <ellipse cx="39" cy="108" rx="14" ry="3.5" fill="#e0ddd5" stroke="#c8c5bc" stroke-width="0.8"/>
+            <!-- volva base -->
+            <ellipse cx="39" cy="143" rx="14" ry="5" fill="#e0ddd5"/>
+            <!-- cap -->
+            <path d="M6,96 C8,66 12,42 39,32 C66,42 70,66 72,96 Z" fill="#d42020"/>
+            <!-- cap highlight -->
+            <path d="M14,90 C14,70 18,52 35,42" fill="none" stroke="#e83535" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+            <!-- white spots -->
+            <circle cx="30" cy="60" r="7" fill="white" opacity="0.88"/>
+            <circle cx="52" cy="55" r="5.5" fill="white" opacity="0.88"/>
+            <circle cx="20" cy="78" r="4.5" fill="white" opacity="0.88"/>
+            <circle cx="60" cy="74" r="5" fill="white" opacity="0.88"/>
+            <circle cx="40" cy="44" r="4" fill="white" opacity="0.88"/>
+            <circle cx="43" cy="82" r="3.5" fill="white" opacity="0.88"/>
+
+            <!-- GOLDEN CHANTERELLE (centre) -->
+            <!-- stem -->
+            <path d="M93,102 Q90,118 88,140 Q92,148 100,148 Q108,148 112,140 Q110,118 107,102 Z" fill="#c88010"/>
+            <!-- ridges -->
+            <line x1="100" y1="102" x2="80" y2="95" stroke="#c88010" stroke-width="2" stroke-linecap="round"/>
+            <line x1="100" y1="102" x2="75" y2="90" stroke="#c88010" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="100" y1="102" x2="120" y2="95" stroke="#c88010" stroke-width="2" stroke-linecap="round"/>
+            <line x1="100" y1="102" x2="125" y2="90" stroke="#c88010" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- cap -->
+            <path d="M72,92 C70,80 74,64 85,56 C90,52 100,50 100,50 C100,50 110,52 115,56 C126,64 130,80 128,92 C125,98 118,102 110,100 C104,98 102,94 100,94 C98,94 96,98 90,100 C82,102 75,98 72,92 Z" fill="#f5b820"/>
+            <!-- highlight -->
+            <ellipse cx="88" cy="66" rx="9" ry="6" fill="#ffd84a" opacity="0.5" transform="rotate(-20,88,66)"/>
+
+            <!-- KING BOLETE (right, smaller) -->
+            <!-- stem -->
+            <path d="M148,110 Q143,120 144,134 Q147,146 158,147 Q169,146 172,134 Q173,120 168,110 Z" fill="#e0cca0"/>
+            <!-- net on stem -->
+            <line x1="148" y1="118" x2="168" y2="118" stroke="#a88040" stroke-width="0.6"/>
+            <line x1="148" y1="128" x2="172" y2="128" stroke="#a88040" stroke-width="0.6"/>
+            <line x1="148" y1="138" x2="172" y2="138" stroke="#a88040" stroke-width="0.6"/>
+            <line x1="155" y1="110" x2="154" y2="146" stroke="#a88040" stroke-width="0.6"/>
+            <line x1="161" y1="110" x2="162" y2="147" stroke="#a88040" stroke-width="0.6"/>
+            <!-- tubes -->
+            <ellipse cx="158" cy="111" rx="24" ry="5" fill="#c8a860"/>
+            <!-- cap -->
+            <path d="M134,111 C135,90 140,74 158,68 C176,74 181,90 182,111 Z" fill="#7a4018"/>
+            <!-- highlight -->
+            <ellipse cx="148" cy="86" rx="8" ry="6" fill="#9a5828" opacity="0.3" transform="rotate(-15,148,86)"/>
+          </svg>
+        </div>
+
+        <div class="header-text">
+          <h1>Dr. Inga Gutarevaitė</h1>
+          <p class="role">Mycologist · Lithuanian Forest Fungi</p>
+          <p class="tagline">Thirty years devoted to the systematic documentation of macrofungi across the boreal and mixed forests of the Baltic region — an undertaking from which one does not easily retire.</p>
+        </div>
+      </div>
+
       <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#intro">On Mycology</a>
+        <a href="#seasonality">Seasonality</a>
+        <a href="#edible">Edible Species</a>
+        <a href="#poisonous">Poisonous Species</a>
       </nav>
     </div>
   </header>
 
   <main>
 
-    <section id="about" class="container">
-      <h2>About</h2>
+    <!-- ── INTRO ── -->
+    <section id="intro" class="container">
+      <p class="eyebrow">Field Notes</p>
+      <h2 class="section-title">On Lithuanian Mycology</h2>
       <p>
-        I'm a destination specialist at <strong>Firebird Tours</strong> in Vilnius, where I design
-        private, high-touch travel itineraries and manage long-term client relationships.
-        Alongside that work, I build AI automation tools and am deepening my expertise in
-        agentic AI through Turing College's <em>Building with AI Agents</em> program.
+        Lithuania's forests cover roughly one third of the country's total land area, forming an unbroken boreal and mixed-forest continuum that stretches from the coastal dunes of the Curonian Spit to the ancient oak-and-pine stands of Aukštaitija. Within this vast sylvan expanse, mycological survey work has catalogued no fewer than four hundred edible mushroom varieties — a figure that places Lithuania among the most fungally distinguished nations of northern Europe, a fact the author does not cite with any false modesty. Foraging, referred to among practitioners as <em>grybavimas</em>, occupies a position in the national psyche second only to basketball: it is practised across every age cohort, debated with passionate authority at every kitchen table, and regarded as a serious inherited skill rather than a recreational pastime undertaken by people who have run out of other things to do.
       </p>
       <p>
-        I sit at the intersection of <strong>high-touch service</strong> and
-        <strong>intelligent automation</strong> — designing experiences that feel handcrafted
-        for each client, and building systems that make that level of care scalable.
-      </p>
-      <p>
-        At Firebird Tours I translate complex, multi-week travel wishes into detailed private
-        itineraries across Europe, South America, and beyond. Outside of travel, I design AI
-        workflows that help teams work smarter: automating lead qualification, re-engagement,
-        and coaching feedback inside CRMs.
+        The spiritual and gastronomic capital of Lithuanian mycology is unquestionably the southern region of Dzūkija, centred on the market town of Varėna, whose surrounding pine and mixed forests produce specimens of such consistency and quality that the region hosts the annual September mushroom-picking championship. This competitive event — attended by thousands of practitioners from across the country and observed, with considerable interest, by mycologists from the broader Baltic community — is not, as the uninitiated sometimes assume, a casual festival. It is a rigorous exercise in applied field taxonomy, and it is taken entirely seriously by all parties involved.
       </p>
     </section>
 
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
+    <!-- ── SEASONALITY ── -->
+    <section id="seasonality" class="container">
+      <p class="eyebrow">Calendar of Fruiting</p>
+      <h2 class="section-title">Seasonality</h2>
+      <div class="timeline">
 
-        <div class="skill-group">
-          <h3>Travel &amp; Client Work</h3>
-          <ul>
-            <li>Bespoke itinerary design — luxury, multi-week, multi-country journeys</li>
-            <li>Long-term client relationship management (240+ clients, zero negative reviews)</li>
-          </ul>
+        <div class="season-card spring">
+          <div class="season-label">Spring</div>
+          <!-- Mini morel SVG -->
+          <svg class="season-mini-svg" viewBox="0 0 60 75" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="22" y="48" width="16" height="22" rx="4" fill="#e8d8b0"/>
+            <path d="M10,50 C8,30 15,12 30,8 C45,12 52,30 50,50 Z" fill="#8b6020"/>
+            <path d="M14,48 C16,36 20,24 30,18" fill="none" stroke="#6a4010" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+            <path d="M12,40 Q18,34 22,28 Q26,22 30,18 Q34,22 38,28 Q42,34 48,40" fill="none" stroke="#6a4010" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <path d="M10,50 C12,46 16,44 20,46 C24,48 26,52 30,52 C34,52 36,48 40,46 C44,44 48,46 50,50" fill="none" stroke="#6a4010" stroke-width="1" opacity="0.4"/>
+          </svg>
+          <div class="season-species">Morels <br><span class="lt-name">Briedžiukai</span></div>
+          <p class="season-habitat">Deciduous woods and river valleys</p>
         </div>
 
-        <div class="skill-group">
-          <h3>AI &amp; Automation</h3>
-          <ul>
-            <li>AI workflow automation and agent design (browser automations, CRM workflows)</li>
-            <li>Prompt writing and prompt engineering</li>
-            <li>Agentic AI development (Turing College — <em>Building with AI Agents</em>)</li>
-          </ul>
+        <div class="season-card early-summer">
+          <div class="season-label">Early Summer</div>
+          <!-- Mini chanterelle SVG -->
+          <svg class="season-mini-svg" viewBox="0 0 60 75" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M28,48 Q26,58 25,68 Q28,73 30,73 Q32,73 35,68 Q34,58 32,48 Z" fill="#c88010"/>
+            <path d="M30,48 L18,43" stroke="#c88010" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M30,48 L42,43" stroke="#c88010" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M16,44 C14,36 16,24 22,18 C26,14 30,12 30,12 C30,12 34,14 38,18 C44,24 46,36 44,44 C42,48 38,50 34,49 C32,48 30,46 30,46 C30,46 28,48 26,49 C22,50 18,48 16,44 Z" fill="#f5b820"/>
+            <ellipse cx="25" cy="26" rx="5" ry="4" fill="#ffd84a" opacity="0.5" transform="rotate(-20,25,26)"/>
+          </svg>
+          <div class="season-species">Golden Chanterelle <br><span class="lt-name">Voveraitė</span></div>
+          <p class="season-habitat">First flush; mixed forests</p>
         </div>
 
-        <div class="skill-group">
-          <h3>Data &amp; Analytics</h3>
-          <ul>
-            <li>Customer lifetime value analysis and cohort analysis</li>
-            <li>A/B testing and SQL</li>
-          </ul>
+        <div class="season-card peak">
+          <div class="season-label">Late Summer – Autumn</div>
+          <!-- Mini bolete SVG -->
+          <svg class="season-mini-svg" viewBox="0 0 60 75" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22,42 Q19,52 20,62 Q23,72 30,72 Q37,72 40,62 Q41,52 38,42 Z" fill="#e0cca0"/>
+            <line x1="22" y1="50" x2="38" y2="50" stroke="#a88040" stroke-width="0.6"/>
+            <line x1="22" y1="58" x2="38" y2="58" stroke="#a88040" stroke-width="0.6"/>
+            <line x1="22" y1="66" x2="38" y2="66" stroke="#a88040" stroke-width="0.6"/>
+            <ellipse cx="30" cy="43" rx="22" ry="5" fill="#c8a860"/>
+            <path d="M8,43 C9,24 14,12 30,8 C46,12 51,24 52,43 Z" fill="#7a4018"/>
+          </svg>
+          <div class="season-species">Boletes &amp; Chanterelles <br><span class="lt-name">Baravykai, Voveraitės</span></div>
+          <p class="season-habitat">Peak season; great abundance across all forest types</p>
+        </div>
+
+        <div class="season-card autumn-s">
+          <div class="season-label">Autumn</div>
+          <!-- Mini milk cap SVG -->
+          <svg class="season-mini-svg" viewBox="0 0 60 75" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="22" y="45" width="16" height="24" rx="4" fill="#e87820"/>
+            <ellipse cx="30" cy="47" rx="26" ry="6" fill="#c05a10"/>
+            <path d="M4,47 C5,32 10,18 30,12 C50,18 55,32 56,47 Z" fill="#e87820"/>
+            <ellipse cx="30" cy="28" rx="16" ry="12" fill="none" stroke="#c05a10" stroke-width="1.2" opacity="0.5"/>
+            <ellipse cx="30" cy="28" rx="9" ry="7" fill="none" stroke="#c05a10" stroke-width="1" opacity="0.4"/>
+            <circle cx="14" cy="48" r="2.5" fill="#e87820"/>
+            <circle cx="46" cy="48" r="2" fill="#e87820"/>
+          </svg>
+          <div class="season-species">Milk Caps &amp; Russulas <br><span class="lt-name">Rudmėsės, Ūmėdės</span></div>
+          <p class="season-habitat">Salted and dried for winter preservation</p>
+        </div>
+
+        <div class="season-card late-autumn">
+          <div class="season-label">Late Autumn</div>
+          <!-- Mini oyster mushroom SVG -->
+          <svg class="season-mini-svg" viewBox="0 0 60 75" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="26" y="52" width="8" height="18" rx="3" fill="#c8c0b8"/>
+            <path d="M6,52 C5,38 10,24 30,20 C50,24 55,38 54,52 C50,60 40,65 30,64 C20,65 10,60 6,52 Z" fill="#d8d0c5"/>
+            <path d="M30,64 L30,52" stroke="#b8b0a5" stroke-width="1"/>
+            <path d="M30,64 Q20,58 10,52" stroke="#b8b0a5" stroke-width="0.8" fill="none"/>
+            <path d="M30,64 Q40,58 50,52" stroke="#b8b0a5" stroke-width="0.8" fill="none"/>
+            <ellipse cx="22" cy="36" rx="8" ry="5" fill="#e8e0d5" opacity="0.5" transform="rotate(-20,22,36)"/>
+          </svg>
+          <div class="season-species">Oyster Mushrooms <br><span class="lt-name">Austrijos</span></div>
+          <p class="season-habitat">On fallen and standing timber; persist after first frost</p>
         </div>
 
       </div>
     </section>
 
-    <section id="projects" class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
+    <!-- ── EDIBLE SPECIES ── -->
+    <section id="edible" class="container">
+      <p class="eyebrow">Recommended for the Table</p>
+      <h2 class="section-title">Edible Species</h2>
+      <div class="species-grid">
 
-        <article class="card">
-          <div class="card-tag">Travel</div>
-          <h3>Luxury Travel Itineraries</h3>
-          <p>
-            Designed complex private journeys for international clients, including an 18-day
-            Italy and Greece itinerary and a 25-day Argentina–Peru–Brazil expedition. Each
-            route is built around the client's pace, interests, and travel style.
-          </p>
+        <!-- KING BOLETE -->
+        <article class="species-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: cream, bulbous -->
+            <path d="M33,72 Q26,92 28,112 Q32,127 50,127 Q68,127 72,112 Q74,92 67,72 Z" fill="#e8d5a0"/>
+            <!-- net pattern on stem -->
+            <path d="M33,72 Q26,92 28,112 Q32,127 50,127 Q68,127 72,112 Q74,92 67,72 Z" fill="none" stroke="#b89050" stroke-width="0.6"/>
+            <line x1="31" y1="84" x2="69" y2="84" stroke="#b89050" stroke-width="0.5"/>
+            <line x1="29" y1="96" x2="71" y2="96" stroke="#b89050" stroke-width="0.5"/>
+            <line x1="29" y1="108" x2="71" y2="108" stroke="#b89050" stroke-width="0.5"/>
+            <line x1="30" y1="120" x2="70" y2="120" stroke="#b89050" stroke-width="0.5"/>
+            <line x1="42" y1="72" x2="40" y2="126" stroke="#b89050" stroke-width="0.5"/>
+            <line x1="50" y1="72" x2="50" y2="127" stroke="#b89050" stroke-width="0.5"/>
+            <line x1="58" y1="72" x2="60" y2="126" stroke="#b89050" stroke-width="0.5"/>
+            <!-- tubes (pore layer) -->
+            <ellipse cx="50" cy="73" rx="42" ry="7" fill="#c8a860"/>
+            <!-- cap -->
+            <path d="M8,73 C9,42 16,20 50,12 C84,20 91,42 92,73 Z" fill="#7a4018"/>
+            <!-- brim shadow -->
+            <ellipse cx="50" cy="73" rx="42" ry="4" fill="#50280a" opacity="0.35"/>
+            <!-- highlight -->
+            <ellipse cx="34" cy="44" rx="12" ry="9" fill="#9a5828" opacity="0.3" transform="rotate(-20,34,44)"/>
+          </svg>
+          <p class="common-name">Penny Bun · King Bolete</p>
+          <p class="card-lt-name">Baravykas</p>
+          <p class="latin-name">Boletus edulis</p>
+          <span class="habitat-tag">Mixed and coniferous forests</span>
+          <p class="description">The undisputed king of the Lithuanian forest; finest specimens are carefully dried and reserved for Christmas Eve, Kūčios, where their presence on the table is not optional.</p>
         </article>
 
-        <article class="card">
-          <div class="card-tag">AI &amp; Automation</div>
-          <h3>AI Automation for a Travel CRM</h3>
-          <p>
-            Built an end-to-end automation layer for a travel CRM: automated lead grading,
-            closed-lost re-engagement workflows, and a sales-coaching assistant powered by AI.
-          </p>
+        <!-- GOLDEN CHANTERELLE -->
+        <article class="species-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: golden funnel -->
+            <path d="M40,80 Q36,98 35,114 Q38,128 50,128 Q62,128 65,114 Q64,98 60,80 Z" fill="#d48810"/>
+            <!-- forked ridges under cap -->
+            <line x1="50" y1="80" x2="22" y2="70" stroke="#d48810" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="50" y1="80" x2="14" y2="62" stroke="#d48810" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="50" y1="80" x2="78" y2="70" stroke="#d48810" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="50" y1="80" x2="86" y2="62" stroke="#d48810" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="50" y1="80" x2="50" y2="60" stroke="#d48810" stroke-width="2" stroke-linecap="round"/>
+            <line x1="50" y1="80" x2="32" y2="58" stroke="#d48810" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="50" y1="80" x2="68" y2="58" stroke="#d48810" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- cap: wavy, golden-yellow -->
+            <path d="M14,66 C10,54 14,36 26,26 C34,20 50,16 50,16 C50,16 66,20 74,26 C86,36 90,54 86,66 C84,72 78,76 70,74 C62,72 58,66 50,66 C42,66 38,72 30,74 C22,76 16,72 14,66 Z" fill="#f5b820"/>
+            <!-- highlight -->
+            <ellipse cx="34" cy="38" rx="11" ry="8" fill="#ffd84a" opacity="0.45" transform="rotate(-20,34,38)"/>
+          </svg>
+          <p class="common-name">Golden Chanterelle</p>
+          <p class="card-lt-name">Voveraitė</p>
+          <p class="latin-name">Cantharellus cibarius</p>
+          <span class="habitat-tag">Mixed and deciduous forests</span>
+          <p class="description">Apricot-scented and unmistakably golden; fried in butter with fresh dill it constitutes the most reliable argument for the existence of a benevolent universe.</p>
         </article>
 
-        <article class="card">
-          <div class="card-tag">Product · In Development</div>
-          <h3>4Plan — Interior Design App</h3>
-          <p>
-            Co-developing a cross-platform interior design application. Currently in active
-            development.
-          </p>
+        <!-- BIRCH BOLETE -->
+        <article class="species-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: white/cream with dark scabers -->
+            <rect x="34" y="68" width="32" height="56" rx="8" fill="#f0ece4"/>
+            <!-- scabers (dark scales) on stem -->
+            <ellipse cx="42" cy="78" rx="4" ry="2.5" fill="#3a2a18" opacity="0.7"/>
+            <ellipse cx="56" cy="84" rx="4" ry="2.5" fill="#3a2a18" opacity="0.7"/>
+            <ellipse cx="40" cy="93" rx="3.5" ry="2" fill="#3a2a18" opacity="0.7"/>
+            <ellipse cx="58" cy="98" rx="4" ry="2.5" fill="#3a2a18" opacity="0.7"/>
+            <ellipse cx="44" cy="107" rx="3.5" ry="2" fill="#3a2a18" opacity="0.7"/>
+            <ellipse cx="56" cy="113" rx="3.5" ry="2" fill="#3a2a18" opacity="0.7"/>
+            <ellipse cx="42" cy="120" rx="3" ry="2" fill="#3a2a18" opacity="0.6"/>
+            <!-- tubes -->
+            <ellipse cx="50" cy="69" rx="38" ry="6" fill="#d4c898"/>
+            <!-- cap: dark grey-brown -->
+            <path d="M12,69 C13,42 18,20 50,13 C82,20 87,42 88,69 Z" fill="#5a4a30"/>
+            <!-- shadow under brim -->
+            <ellipse cx="50" cy="69" rx="38" ry="4" fill="#3a2a14" opacity="0.35"/>
+            <!-- highlight -->
+            <ellipse cx="36" cy="42" rx="11" ry="8" fill="#7a6a50" opacity="0.35" transform="rotate(-15,36,42)"/>
+          </svg>
+          <p class="common-name">Birch Bolete</p>
+          <p class="card-lt-name">Lepšė</p>
+          <p class="latin-name">Leccinum scabrum</p>
+          <span class="habitat-tag">Under birch and aspen</span>
+          <p class="description">The distinctive dark scabers on a pale stem render misidentification essentially inexcusable; found reliably wherever birch trees grow in sufficient number to merit the word "grove."</p>
+        </article>
+
+        <!-- SAFFRON MILK CAP -->
+        <article class="species-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: orange -->
+            <rect x="35" y="70" width="30" height="52" rx="8" fill="#e07018"/>
+            <!-- pits/hollows on stem (lactarius feature) -->
+            <ellipse cx="44" cy="82" rx="5" ry="2.5" fill="#c05808" opacity="0.5"/>
+            <ellipse cx="58" cy="92" rx="5" ry="2.5" fill="#c05808" opacity="0.5"/>
+            <ellipse cx="44" cy="104" rx="4" ry="2" fill="#c05808" opacity="0.5"/>
+            <!-- gills: orange -->
+            <ellipse cx="50" cy="71" rx="40" ry="6.5" fill="#d06010"/>
+            <!-- milk drops at cap edge -->
+            <circle cx="12" cy="72" r="3.5" fill="#e87018"/>
+            <circle cx="88" cy="72" r="3" fill="#e87018"/>
+            <circle cx="20" cy="68" r="2.5" fill="#e07018"/>
+            <!-- cap: orange with concentric rings -->
+            <path d="M10,72 C11,44 17,22 50,14 C83,22 89,44 90,72 Z" fill="#e87820"/>
+            <!-- concentric ring zones -->
+            <ellipse cx="50" cy="42" rx="30" ry="22" fill="none" stroke="#c05808" stroke-width="1.2" opacity="0.5"/>
+            <ellipse cx="50" cy="38" rx="18" ry="14" fill="none" stroke="#c05808" stroke-width="1" opacity="0.4"/>
+            <ellipse cx="50" cy="34" rx="9" ry="7" fill="none" stroke="#c05808" stroke-width="0.8" opacity="0.3"/>
+            <!-- highlight -->
+            <ellipse cx="34" cy="42" rx="10" ry="7" fill="#f0a040" opacity="0.35" transform="rotate(-20,34,42)"/>
+          </svg>
+          <p class="common-name">Saffron Milk Cap</p>
+          <p class="card-lt-name">Rudmėsė</p>
+          <p class="latin-name">Lactarius deliciosus</p>
+          <span class="habitat-tag">Pine forests, late autumn</span>
+          <p class="description">Bleeds a vivid orange latex when cut — a property that is alarming to the uninitiated and reassuring to the experienced; heavily salted in ceramic crocks for winter consumption.</p>
+        </article>
+
+        <!-- RUSSULA -->
+        <article class="species-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: white, chunky -->
+            <rect x="34" y="72" width="32" height="48" rx="9" fill="#f5f2ee"/>
+            <!-- stem shadow -->
+            <rect x="34" y="72" width="32" height="48" rx="9" fill="none" stroke="#ddd8d0" stroke-width="1"/>
+            <!-- gills: white, close -->
+            <ellipse cx="50" cy="73" rx="44" ry="7" fill="#ece8e2"/>
+            <!-- gill lines -->
+            <line x1="14" y1="72" x2="14" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="22" y1="70" x2="22" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="30" y1="68" x2="30" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="38" y1="67" x2="38" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="50" y1="67" x2="50" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="62" y1="67" x2="62" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="70" y1="68" x2="70" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="78" y1="70" x2="78" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <line x1="86" y1="72" x2="86" y2="78" stroke="#d8d4ce" stroke-width="0.8"/>
+            <!-- cap: vivid red, relatively flat -->
+            <path d="M6,73 C7,55 14,36 50,28 C86,36 93,55 94,73 Z" fill="#cc2a1a"/>
+            <!-- cap brim shadow -->
+            <ellipse cx="50" cy="73" rx="44" ry="4" fill="#9e1808" opacity="0.35"/>
+            <!-- highlight -->
+            <ellipse cx="34" cy="50" rx="12" ry="8" fill="#e84030" opacity="0.3" transform="rotate(-20,34,50)"/>
+            <!-- sheen spot -->
+            <ellipse cx="30" cy="44" rx="6" ry="4" fill="#ff6050" opacity="0.2" transform="rotate(-15,30,44)"/>
+          </svg>
+          <p class="common-name">Russula</p>
+          <p class="card-lt-name">Ūmėdė</p>
+          <p class="latin-name">Russula spp.</p>
+          <span class="habitat-tag">All forest types, common</span>
+          <p class="description">Appears in a bewildering range of colours — red, purple, green, yellow — and constitutes perhaps the most reliably abundant edible genus in the Lithuanian forest; identification to species level is, frankly, optional.</p>
+        </article>
+
+        <!-- SLIPPERY JACK -->
+        <article class="species-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: yellow, with ring -->
+            <rect x="34" y="72" width="32" height="52" rx="8" fill="#e8d050"/>
+            <!-- ring -->
+            <path d="M30,84 Q50,91 70,84 L68,90 Q50,98 32,90 Z" fill="#c8b030"/>
+            <!-- stem above ring is pale yellow -->
+            <rect x="35" y="72" width="30" height="13" rx="5" fill="#f5e880"/>
+            <!-- tubes -->
+            <ellipse cx="50" cy="73" rx="42" ry="7" fill="#d8c050"/>
+            <!-- cap: chestnut brown with sheen -->
+            <path d="M8,73 C9,44 16,22 50,14 C84,22 91,44 92,73 Z" fill="#8a5018"/>
+            <!-- cap sheen highlight (slimy effect) -->
+            <path d="M14,62 C16,46 24,32 40,24" fill="none" stroke="#b07838" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+            <ellipse cx="32" cy="42" rx="14" ry="10" fill="#b07838" opacity="0.2" transform="rotate(-20,32,42)"/>
+            <!-- shiny spot -->
+            <ellipse cx="26" cy="36" rx="7" ry="4" fill="#ffffff" opacity="0.18" transform="rotate(-20,26,36)"/>
+            <!-- brim shadow -->
+            <ellipse cx="50" cy="73" rx="42" ry="4" fill="#5a2e08" opacity="0.3"/>
+          </svg>
+          <p class="common-name">Slippery Jack</p>
+          <p class="card-lt-name">Kazlėkas</p>
+          <p class="latin-name">Suillus luteus</p>
+          <span class="habitat-tag">Pine forests</span>
+          <p class="description">The distinctively glutinous cap surface, while off-putting to the novice, is simply peeled away before cooking; abundant under Scots pine and harvested in very large quantities without ceremony.</p>
         </article>
 
       </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <p>I'm open to conversations about travel, AI projects, or collaborations.</p>
-      <ul class="contact-list">
-        <li>
-          <span class="contact-label">Email</span>
-          <a href="mailto:[your email here]">[your email here]</a>
-        </li>
-        <li>
-          <span class="contact-label">LinkedIn</span>
-          <a href="[your LinkedIn URL here]" target="_blank" rel="noopener">[your LinkedIn URL here]</a>
-        </li>
-        <li>
-          <span class="contact-label">Phone</span>
-          <a href="tel:+370609766755">+370 609 766 755</a>
-        </li>
-      </ul>
+    <!-- ── POISONOUS SPECIES ── -->
+    <section id="poisonous" class="container poison-section">
+      <p class="eyebrow">Handle With Authority</p>
+      <h2 class="section-title">Poisonous Species</h2>
+      <p class="poison-intro">
+        The following taxa are presented for identification and avoidance purposes only. Each species documented below has caused serious illness or fatality among Lithuanian foragers within living memory. The author notes, with professional disappointment, that no quantity of cooking, salting, parboiling, or confident optimism renders any of the following specimens safe for human consumption.
+      </p>
+      <div class="species-grid">
+
+        <!-- DEATH CAP -->
+        <article class="poison-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- volva at base (white cup) -->
+            <path d="M32,124 Q32,110 50,108 Q68,110 68,124 Q62,130 50,130 Q38,130 32,124 Z" fill="#eeeee8"/>
+            <!-- stem: white -->
+            <rect x="36" y="70" width="28" height="42" rx="7" fill="#f0f0ea"/>
+            <!-- ring (skirt) -->
+            <path d="M30,82 Q50,90 70,82 L68,88 Q50,96 32,88 Z" fill="#e0e0d8"/>
+            <!-- stem above ring -->
+            <rect x="37" y="70" width="26" height="14" rx="5" fill="#f5f5f0"/>
+            <!-- gills: white, close -->
+            <ellipse cx="50" cy="71" rx="40" ry="7" fill="#e8e8e0"/>
+            <!-- cap: pale olive-green -->
+            <path d="M10,71 C11,44 17,22 50,14 C83,22 89,44 90,71 Z" fill="#a8b860"/>
+            <!-- darker green mottling -->
+            <ellipse cx="35" cy="44" rx="14" ry="10" fill="#8aa040" opacity="0.25" transform="rotate(-15,35,44)"/>
+            <!-- brim shadow -->
+            <ellipse cx="50" cy="71" rx="40" ry="4" fill="#708040" opacity="0.3"/>
+            <!-- highlight -->
+            <ellipse cx="34" cy="40" rx="10" ry="7" fill="#c0d080" opacity="0.3" transform="rotate(-20,34,40)"/>
+          </svg>
+          <span class="do-not-consume">⚠ Do Not Consume</span>
+          <p class="poison-level">Deadly</p>
+          <p class="common-name">Death Cap</p>
+          <p class="card-lt-name">Žalsvoji musmirė</p>
+          <p class="latin-name">Amanita phalloides</p>
+          <p class="danger">Responsible for the majority of fatal mushroom poisonings in Europe; its olive-green cap is easily confused with the edible Green Russula by foragers who have allowed their standards to slip.</p>
+        </article>
+
+        <!-- DESTROYING ANGEL -->
+        <article class="poison-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- volva at base -->
+            <path d="M33,124 Q33,110 50,108 Q67,110 67,124 Q61,130 50,130 Q39,130 33,124 Z" fill="#f0f0ec"/>
+            <!-- stem: pure white -->
+            <rect x="37" y="68" width="26" height="44" rx="7" fill="#f8f8f5"/>
+            <!-- stem outline -->
+            <rect x="37" y="68" width="26" height="44" rx="7" fill="none" stroke="#e0e0dc" stroke-width="0.8"/>
+            <!-- ring (drooping skirt) -->
+            <path d="M28,80 Q50,89 72,80 L70,87 Q50,96 30,87 Z" fill="#e8e8e4"/>
+            <!-- gills: white -->
+            <ellipse cx="50" cy="69" rx="38" ry="7" fill="#ededea"/>
+            <!-- gill lines -->
+            <line x1="18" y1="68" x2="18" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <line x1="28" y1="65" x2="28" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <line x1="38" y1="63" x2="38" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <line x1="50" y1="62" x2="50" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <line x1="62" y1="63" x2="62" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <line x1="72" y1="65" x2="72" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <line x1="82" y1="68" x2="82" y2="74" stroke="#ddddd8" stroke-width="0.8"/>
+            <!-- cap: pure white -->
+            <path d="M12,69 C13,42 18,20 50,12 C82,20 87,42 88,69 Z" fill="#f8f8f5"/>
+            <!-- subtle outline -->
+            <path d="M12,69 C13,42 18,20 50,12 C82,20 87,42 88,69 Z" fill="none" stroke="#e0e0dc" stroke-width="0.8"/>
+            <!-- brim shadow -->
+            <ellipse cx="50" cy="69" rx="38" ry="3.5" fill="#d0d0cc" opacity="0.3"/>
+            <!-- highlight -->
+            <ellipse cx="34" cy="40" rx="10" ry="7" fill="#ffffff" opacity="0.6" transform="rotate(-20,34,40)"/>
+          </svg>
+          <span class="do-not-consume">⚠ Do Not Consume</span>
+          <p class="poison-level">Deadly</p>
+          <p class="common-name">Destroying Angel</p>
+          <p class="card-lt-name">Baltoji musmirė</p>
+          <p class="latin-name">Amanita virosa</p>
+          <p class="danger">Pure white throughout — cap, gills, stem, and volva — which renders it deceptively pristine in appearance; this quality has historically been its most lethal characteristic.</p>
+        </article>
+
+        <!-- FUNERAL BELL -->
+        <article class="poison-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: slender, brown, with ring -->
+            <rect x="41" y="68" width="18" height="56" rx="5" fill="#c8900a"/>
+            <!-- ring (membranous) -->
+            <path d="M34,80 Q50,87 66,80 L64,86 Q50,92 36,86 Z" fill="#a07008"/>
+            <!-- stem above ring -->
+            <rect x="42" y="68" width="16" height="13" rx="4" fill="#d8a820"/>
+            <!-- gills: rusty brown (spore colour) -->
+            <ellipse cx="50" cy="69" rx="34" ry="6.5" fill="#b07810"/>
+            <!-- gill lines -->
+            <line x1="20" y1="68" x2="20" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="28" y1="65" x2="28" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="36" y1="63" x2="36" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="44" y1="62" x2="44" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="56" y1="62" x2="56" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="64" y1="63" x2="64" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="72" y1="65" x2="72" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <line x1="80" y1="68" x2="80" y2="74" stroke="#8a5a08" stroke-width="0.8"/>
+            <!-- cap: honey/tawny brown, bell-shaped -->
+            <path d="M16,69 C18,50 24,32 50,22 C76,32 82,50 84,69 Z" fill="#c89020"/>
+            <!-- water droplet at cap margin (hygrophanous) -->
+            <ellipse cx="50" cy="36" rx="14" ry="10" fill="#a07010" opacity="0.25"/>
+            <!-- brim shadow -->
+            <ellipse cx="50" cy="69" rx="34" ry="3.5" fill="#805008" opacity="0.35"/>
+            <!-- highlight -->
+            <ellipse cx="36" cy="44" rx="10" ry="7" fill="#e0b030" opacity="0.3" transform="rotate(-20,36,44)"/>
+          </svg>
+          <span class="do-not-consume">⚠ Do Not Consume</span>
+          <p class="poison-level">Deadly</p>
+          <p class="common-name">Funeral Bell</p>
+          <p class="card-lt-name">Galerína</p>
+          <p class="latin-name">Galerina marginata</p>
+          <p class="danger">Grows on wood in clusters that bear an unfortunate resemblance to the perfectly edible Honey Fungus (<em>Kelmutis</em>); contains the same amatoxins as the Death Cap and is, in the author's experience, no less deadly for being smaller.</p>
+        </article>
+
+        <!-- FLY AGARIC -->
+        <article class="poison-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- volva at base -->
+            <path d="M30,124 Q30,110 50,108 Q70,110 70,124 Q64,130 50,130 Q36,130 30,124 Z" fill="#f0f0ec"/>
+            <!-- stem: white -->
+            <rect x="35" y="68" width="30" height="44" rx="8" fill="#f5f5f0"/>
+            <!-- stem outline -->
+            <rect x="35" y="68" width="30" height="44" rx="8" fill="none" stroke="#e0ddd5" stroke-width="0.8"/>
+            <!-- ring (prominent skirt) -->
+            <path d="M26,80 Q50,90 74,80 L72,88 Q50,98 28,88 Z" fill="#e8e5dc"/>
+            <!-- stem above ring: white -->
+            <rect x="36" y="68" width="28" height="14" rx="6" fill="#f8f8f5"/>
+            <!-- gills: white -->
+            <ellipse cx="50" cy="69" rx="44" ry="8" fill="#eeece6"/>
+            <!-- cap: vivid scarlet red -->
+            <path d="M6,69 C7,38 14,16 50,8 C86,16 93,38 94,69 Z" fill="#d41818"/>
+            <!-- cap brim shadow -->
+            <ellipse cx="50" cy="69" rx="44" ry="5" fill="#9a0808" opacity="0.4"/>
+            <!-- white wart spots (universal veil remnants) -->
+            <circle cx="36" cy="32" r="8" fill="white" opacity="0.92"/>
+            <circle cx="62" cy="26" r="6.5" fill="white" opacity="0.92"/>
+            <circle cx="20" cy="50" r="5.5" fill="white" opacity="0.92"/>
+            <circle cx="72" cy="46" r="7" fill="white" opacity="0.92"/>
+            <circle cx="48" cy="18" r="5" fill="white" opacity="0.92"/>
+            <circle cx="30" cy="58" r="4" fill="white" opacity="0.88"/>
+            <circle cx="64" cy="56" r="4.5" fill="white" opacity="0.88"/>
+            <!-- cap highlight -->
+            <path d="M16,58 C18,40 26,24 44,16" fill="none" stroke="#e83030" stroke-width="4" stroke-linecap="round" opacity="0.25"/>
+          </svg>
+          <span class="do-not-consume">⚠ Do Not Consume</span>
+          <p class="poison-level">Poisonous</p>
+          <p class="common-name">Fly Agaric</p>
+          <p class="card-lt-name">Raudonoji musmirė</p>
+          <p class="latin-name">Amanita muscaria</p>
+          <p class="danger">Unmistakably iconic — the scarlet cap with white wart-spots is the global symbol of the mushroom — yet misidentification remains possible among individuals who have not paid adequate attention to any prior instruction.</p>
+        </article>
+
+        <!-- FALSE MOREL -->
+        <article class="poison-card">
+          <svg viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- stem: short, white, hollow (shown as thick) -->
+            <rect x="34" y="78" width="32" height="44" rx="10" fill="#f0ece4"/>
+            <!-- hollow appearance -->
+            <rect x="44" y="84" width="12" height="32" rx="4" fill="#e0dcd4" opacity="0.5"/>
+            <!-- stem outline -->
+            <rect x="34" y="78" width="32" height="44" rx="10" fill="none" stroke="#d4cfc5" stroke-width="0.8"/>
+            <!-- cap: brain-like/convoluted, reddish-brown -->
+            <!-- main cap mass -->
+            <path d="M15,76 C12,58 18,36 35,24 C42,20 50,18 50,18 C50,18 58,20 65,24 C82,36 88,58 85,76 C80,84 70,88 60,86 C54,84 52,80 50,80 C48,80 46,84 40,86 C30,88 20,84 15,76 Z" fill="#9a5020"/>
+            <!-- convoluted wrinkles (brain-like folds) -->
+            <path d="M28,60 C26,50 30,40 35,35" fill="none" stroke="#7a3810" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M35,70 C30,58 32,46 38,38" fill="none" stroke="#7a3810" stroke-width="2" stroke-linecap="round"/>
+            <path d="M50,72 C46,60 44,48 46,36" fill="none" stroke="#7a3810" stroke-width="2" stroke-linecap="round"/>
+            <path d="M62,68 C60,56 62,44 60,36" fill="none" stroke="#7a3810" stroke-width="2" stroke-linecap="round"/>
+            <path d="M72,60 C74,50 70,40 65,35" fill="none" stroke="#7a3810" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- cross-wrinkles -->
+            <path d="M26,52 C36,48 50,46 64,48 C74,50 76,52 76,52" fill="none" stroke="#7a3810" stroke-width="1.5" opacity="0.6"/>
+            <path d="M24,64 C34,60 48,58 62,60 C72,62 76,64 76,64" fill="none" stroke="#7a3810" stroke-width="1.2" opacity="0.5"/>
+            <!-- cap highlight -->
+            <ellipse cx="34" cy="38" rx="10" ry="7" fill="#c07030" opacity="0.25" transform="rotate(-20,34,38)"/>
+          </svg>
+          <span class="do-not-consume">⚠ Do Not Consume</span>
+          <p class="poison-level">Potentially Deadly</p>
+          <p class="common-name">False Morel</p>
+          <p class="card-lt-name">Netikrasis briedžiukas</p>
+          <p class="latin-name">Gyromitra esculenta</p>
+          <p class="danger">The brain-like, convoluted, reddish-brown cap bears a superficial resemblance to the edible true morel; it is not a morel; it contains gyromitrin, which metabolises into monomethylhydrazine; traditional preparation methods involving boiling and ventilation do not reliably neutralise this compound.</p>
+        </article>
+
+      </div>
     </section>
 
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Inga Gutarevaitė</p>
+      <p class="affiliation">
+        Department of Botany and Mycology, Vilnius University &nbsp;·&nbsp;
+        Baltic Mycological Society, Fellow &nbsp;·&nbsp;
+        Author of <em>Grybai: A Field Guide to Lithuanian Forest Fungi</em> (3rd ed., 2023) &nbsp;·&nbsp;
+        Varėna Mushroom Championship — Jury Member, 2014–present
+      </p>
+      <p class="oath">"Never pick what you cannot name."</p>
     </div>
   </footer>
 
